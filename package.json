@@ -1,0 +1,51 @@
+{
+  "name": "test-roosterjs",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.9.3",
+    "@mui/styles": "^5.9.3",
+    "lodash": "^4.17.21",
+    "mathjax-full": "^3.2.2",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-perfect-scrollbar": "^1.5.8",
+    "react-scripts": "5.0.1",
+    "roosterjs-editor-api": "^8.28.1",
+    "roosterjs-editor-core": "^8.28.1",
+    "roosterjs-editor-plugins": "^8.28.1",
+    "roosterjs-react": "^8.28.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@fluentui/react": "^8.87.1"
+  }
+}
