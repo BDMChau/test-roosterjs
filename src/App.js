@@ -13,6 +13,7 @@ function App() {
         name='requirement'
         label='label'
         placeholder='placeholder'
+        defaultValue=''
         required
       // customButtons={{
       //   insertImage: {

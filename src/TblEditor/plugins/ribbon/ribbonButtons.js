@@ -123,9 +123,12 @@ const buttons = {
       fileInput.addEventListener('change', () => {
         let file = fileInput.files[0];
         if (file) {
+          console.log(editor.getElementAtCursor())
+
           insertImage(editor, file);
         }
       });
+
       document.body.appendChild(fileInput);
       fileInput.click();
       document.body.removeChild(fileInput);

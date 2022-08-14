@@ -17,12 +17,7 @@ import {
   getAllFeatures,
   TableCellSelection,
 } from 'roosterjs-editor-plugins';
-import {
-  createContextMenuPlugin,
-  createImageEditMenuProvider,
-  createListEditMenuProvider,
-  createTableEditMenuProvider,
-} from 'roosterjs-react';
+
 import styles from './styles';
 export const UrlPlaceholder = '$url$';
 
@@ -84,17 +79,7 @@ class Editor extends React.PureComponent {
       tableResize: pluginList.tableResize ? new TableResize() : null,
       customReplace: pluginList.customReplace ? new CustomReplacePlugin() : null,
       tableCellSelection: pluginList.tableCellSelection ? new TableCellSelection() : null,
-      listEditMenu:
-        pluginList.contextMenu && pluginList.listEditMenu ? createListEditMenuProvider() : null,
-      imageEditMenu:
-        pluginList.contextMenu && pluginList.imageEditMenu
-          ? createImageEditMenuProvider(imageEdit)
-          : null,
-      tableEditMenu:
-        pluginList.contextMenu && pluginList.tableEditMenu
-          ? createTableEditMenuProvider()
-          : null,
-      contextMenu: pluginList.contextMenu ? createContextMenuPlugin() : null,
+ 
     };
     let plugins = [
       ...Object.keys(editorInstanceTogglePlugins).map(

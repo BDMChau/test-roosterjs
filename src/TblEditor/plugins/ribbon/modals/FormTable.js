@@ -19,6 +19,8 @@ class TableOptions extends React.PureComponent {
   onInsertTable = () => {
     this.props.onDismiss();
     const { cols, rows } = this.state;
+    console.log('Element at cursor: ')
+    console.log(this.props.editor.getElementAtCursor())
     if (cols > 0 && rows > 0) {
       insertTable(this.props.editor, cols, rows);
     }
